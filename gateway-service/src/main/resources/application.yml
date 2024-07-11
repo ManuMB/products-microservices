@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: gateway-service
+  config:
+    import: "optional:configserver:"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/manumb
+          jwk-set-uri: http://localhost:8080/realms/manumb/protocol/openid-connect/certs
+  cloud:
+    config:
+      discovery:
+        enabled: false
+        serviceId: config-server
+    gateway:
+      default-filters:
+        - TokenRelay=
+      routes:
+        - id: checkout-service
+          uri: lb://checkout-service
+          predicates:
+            - Path=/checkout/**
+          filters:
+            - AddRequestHeader=X-Request-From, gateway
+            - AddResponseHeader=X-Response-From, response
+        - id: products-eureka-client
+          uri: lb://products-eureka-client
+          predicates:
+            - Path=/products/**
+eureka:
+  instance:
+    hostname: localhost
+server:
+  port: 8084

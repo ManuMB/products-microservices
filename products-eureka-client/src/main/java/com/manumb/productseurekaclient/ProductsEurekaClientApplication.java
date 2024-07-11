@@ -1,0 +1,13 @@
+package com.manumb.productseurekaclient;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProductsEurekaClientApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProductsEurekaClientApplication.class, args);
+	}
+
+}

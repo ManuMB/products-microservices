@@ -1,0 +1,57 @@
+2024-07-04T18:03:47.630-03:00  INFO 44792 --- [payments-service] [main] c.m.p.PaymentsServiceApplication         : Starting PaymentsServiceApplication using Java 21.0.2 with PID 44792 (C:\Users\Manuel\Documents\DH\BACKEND_SPECIALIZATION\1-FRAMEWORK_SPRING_CLOUD\payments-service\target\classes started by Manuel in C:\Users\Manuel\Documents\DH\BACKEND_SPECIALIZATION\1-FRAMEWORK_SPRING_CLOUD\payments-service)
+2024-07-04T18:03:47.632-03:00  INFO 44792 --- [payments-service] [main] c.m.p.PaymentsServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-07-04T18:03:48.489-03:00  INFO 44792 --- [payments-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e7c66d9-f893-381a-b791-7c3f54ad0682
+2024-07-04T18:03:48.547-03:00  WARN 44792 --- [payments-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-07-04T18:03:48.550-03:00  WARN 44792 --- [payments-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-04T18:03:48.827-03:00  INFO 44792 --- [payments-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-07-04T18:03:48.838-03:00  INFO 44792 --- [payments-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-04T18:03:48.839-03:00  INFO 44792 --- [payments-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-04T18:03:48.920-03:00  INFO 44792 --- [payments-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-04T18:03:48.921-03:00  INFO 44792 --- [payments-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1246 ms
+2024-07-04T18:03:50.696-03:00  INFO 44792 --- [payments-service] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-04T18:03:51.732-03:00  INFO 44792 --- [payments-service] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-04T18:03:51.755-03:00  INFO 44792 --- [payments-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-07-04T18:03:51.800-03:00  WARN 44792 --- [payments-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-07-04T18:03:51.829-03:00  INFO 44792 --- [payments-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-07-04T18:03:51.924-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-07-04T18:03:51.929-03:00  INFO 44792 --- [payments-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-07-04T18:03:51.955-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-07-04T18:03:51.955-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-07-04T18:03:51.955-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-07-04T18:03:51.955-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-07-04T18:03:51.955-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-07-04T18:03:51.956-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-07-04T18:03:51.956-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-07-04T18:03:52.225-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-07-04T18:03:52.227-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-07-04T18:03:52.229-03:00  INFO 44792 --- [payments-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-04T18:03:52.233-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1720127032232 with initial instances count: 0
+2024-07-04T18:03:52.234-03:00  INFO 44792 --- [payments-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENTS-SERVICE with eureka with status UP
+2024-07-04T18:03:52.235-03:00  INFO 44792 --- [payments-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1720127032235, current=UP, previous=STARTING]
+2024-07-04T18:03:52.236-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENTS-SERVICE/localhost:payments-service:8085: registering service...
+2024-07-04T18:03:52.251-03:00  INFO 44792 --- [payments-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2024-07-04T18:03:52.253-03:00  INFO 44792 --- [payments-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2024-07-04T18:03:52.275-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENTS-SERVICE/localhost:payments-service:8085 - registration status: 204
+2024-07-04T18:03:53.259-03:00  INFO 44792 --- [payments-service] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-04T18:03:53.266-03:00  INFO 44792 --- [payments-service] [main] c.m.p.PaymentsServiceApplication         : Started PaymentsServiceApplication in 7.139 seconds (process running for 7.57)
+2024-07-04T18:04:02.005-03:00  INFO 44792 --- [payments-service] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-04T18:04:02.005-03:00  INFO 44792 --- [payments-service] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-04T18:04:02.006-03:00  INFO 44792 --- [payments-service] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-04T18:04:02.038-03:00  INFO 44792 --- [payments-service] [http-nio-8085-exec-1] c.m.p.controller.PaymentRestController   : Intentando obtener payment con id: 4.....
+2024-07-04T18:04:02.039-03:00 ERROR 44792 --- [payments-service] [http-nio-8085-exec-1] c.m.p.controller.PaymentRestController   : Error al intentar obtener un payment
+2024-07-04T18:04:22.229-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-07-04T18:04:22.229-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-07-04T18:04:22.229-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-07-04T18:04:22.229-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-07-04T18:04:22.229-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-07-04T18:04:22.229-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-07-04T18:04:22.229-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-07-04T18:04:22.258-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-07-04T18:04:27.269-03:00  INFO 44792 --- [payments-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENTS-SERVICE with eureka with status DOWN
+2024-07-04T18:04:27.270-03:00  INFO 44792 --- [payments-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1720127067270, current=DOWN, previous=UP]
+2024-07-04T18:04:27.270-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENTS-SERVICE/localhost:payments-service:8085: registering service...
+2024-07-04T18:04:27.284-03:00  INFO 44792 --- [payments-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-07-04T18:04:27.288-03:00  INFO 44792 --- [payments-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENTS-SERVICE/localhost:payments-service:8085 - registration status: 204
+2024-07-04T18:04:27.290-03:00  INFO 44792 --- [payments-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-07-04T18:04:27.296-03:00  INFO 44792 --- [payments-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENTS-SERVICE/localhost:payments-service:8085 - deregister  status: 200
+2024-07-04T18:04:27.301-03:00  INFO 44792 --- [payments-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
